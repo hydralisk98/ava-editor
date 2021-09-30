@@ -4,6 +4,7 @@ Path: " D:\BOUO-SpecProgProjets\BOUOLY-CfprFinalFolio\Ava\ "
 
 ## Features pitch
 
+https://github.com/hydralisk98/Ava/
 https://hydralisk98.github.io/Ava/
 * Minimalist, so as few distractions and as little bloat as possible within Visual Studio .NET Core 5 C#'s constraints
 * Extensive quality documentation
@@ -117,5 +118,6 @@ https://www.c-sharpcorner.com/article/syntax-highlighting-in-richtextbox-control
 https://www.c-sharpcorner.com/article/part-i-simple-color-syntax-code-editor-for-php-written-in-c/  
 https://www.c-sharpcorner.com/article/color-syntax-editor-part-ii-exporting-a-richtextbox-to-a-m/  
 https://duckduckgo.com/?q=nvim+cheatsheet&ia=cheatsheet&iax=cheatsheet&atb=v291-7gy
+https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
 
 ***ENDE***
