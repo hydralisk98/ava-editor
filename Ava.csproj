@@ -23,6 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Expose-Bouo-Si902-%282021-10.1%29.odp" />
+    <None Remove="Expose-Bouo-Si902-%282021-10.1%29.pptx" />
+    <None Remove="RefTechnique.docx" />
+    <None Remove="RefTechnique.odt" />
+    <None Remove="Workflow1.vsdx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CenterCLR.SgmlReader" Version="2018.8.31" />
     <PackageReference Include="Microsoft.Xml.SgmlReader" Version="1.8.25" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
