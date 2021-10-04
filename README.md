@@ -53,7 +53,8 @@ Ideation, deciding upon projects and all the meta-project talks
 
 ### September 30th 2021
 
-* Uploaded to GitHub for easy multi-machine workflows and then update it religiously
+* Uploaded to GitHub for easy multi-machine workflows and then update it religiously<br />
+
 **THE REST OF THE UPDATES ARE IN THE COMMITS' HISTORY**
 
 ## TO-DO LIST of features to implement until October 8th 2021
