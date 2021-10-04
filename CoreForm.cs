@@ -16,9 +16,9 @@ namespace Ava
     public partial class CoreForm : Form
     {
         // Declare global variables
-        string path;
+        string path = "";
         string textualContent = "";
-        string targetText;
+        string targetText = "";
         // private int aboutClickCounter;
 
 

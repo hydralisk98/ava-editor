@@ -24,10 +24,16 @@
 
   <ItemGroup>
     <None Remove="Expose-Bouo-Si902-%282021-10.1%29.odp" />
+    <None Remove="Expose-Bouo-Si902-%282021-10.1%29.odp - Raccourci.lnk" />
     <None Remove="Expose-Bouo-Si902-%282021-10.1%29.pptx" />
+    <None Remove="Expose-Bouo-Si902-%282021-10.1%29.pptx - Raccourci.lnk" />
     <None Remove="RefTechnique.docx" />
+    <None Remove="RefTechnique.docx - Raccourci.lnk" />
     <None Remove="RefTechnique.odt" />
+    <None Remove="RefTechnique.odt - Raccourci.lnk" />
     <None Remove="Workflow1.vsdx" />
+    <None Remove="Workflow1.vsdx - Raccourci.lnk" />
+    <None Remove="~%24Expose-Bouo-Si902-%282021-10.1%29.pptx" />
   </ItemGroup>
 
   <ItemGroup>

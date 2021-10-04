@@ -58,12 +58,7 @@ Ideation, deciding upon projects and all the meta-project talks
 * ?
 * ?
 
-### BLANK DATE 2021
-
-* ?
-* ?
-* ?
-* ?
+_THE REST OF THE UPDATES ARE IN THE COMMITS' HISTORY_
 
 ## TO-DO LIST of features to implement until October 8th 2021
 
@@ -80,17 +75,20 @@ So that by October 15h I have a great presentation to deliver to my comrades. (S
 (fonts, BG & FG colors, bold, italics, embedded images...)
 * Implement the SGML/XML Read-only previewer
 * Improve the SGML/XML previewer to include writing into the previewer and dumb updating
-* Enhance the SGML/XML previewer to do smart&dynamic previews between multiple instances
-* Reduce the code size and need for dependencies to a minimum (or zero if possible)
 * Load and Save RTF files
 * Load and Save XML files
-* Load and Save DOCX files
-* Load and Save ODT files
 * Load and Save PDF files
+
+### Priority class 2
+
+* Enhance the SGML/XML previewer to do smart&dynamic previews between multiple instances
+* Reduce the code size and need for dependencies to a minimum (or zero if possible)
+* Load and Save ODT files
+* Load and Save DOCX files
 * Load and Save SGML files
 * AboutForm & everything alongside that, the proper reimplementation
 
-### Priority class 2
+### Priority class 3
 
 * Cipher/Decipher for the ACA number system (12,16?,20?,24?) (Base 12 symbols: A,B,C,D,E,F,U,V,W,X,Y,Z; 12 extra symbols: H,T,K,N,M,R,I,O,2,3,4,5;)
 * Cipher/Decipher for the UTA mathematical symbolic system (MathematicalSystemToDescribeEveryhing)
