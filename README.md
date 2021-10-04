@@ -54,11 +54,7 @@ Ideation, deciding upon projects and all the meta-project talks
 ### September 30th 2021
 
 * Uploaded to GitHub for easy multi-machine workflows and then update it religiously
-* ?
-* ?
-* ?
-
-_THE REST OF THE UPDATES ARE IN THE COMMITS' HISTORY_
+**THE REST OF THE UPDATES ARE IN THE COMMITS' HISTORY**
 
 ## TO-DO LIST of features to implement until October 8th 2021
 
@@ -68,6 +64,9 @@ So that by October 15h I have a great presentation to deliver to my comrades. (S
 
 ### Priority class 1
 
+* Finalize the Find function
+* Finalize the Replace function
+* Finalize the Append function
 * BulletIndent
 * ZoomFactor?
 * SelectedRtf?
@@ -117,5 +116,31 @@ https://www.c-sharpcorner.com/article/part-i-simple-color-syntax-code-editor-for
 https://www.c-sharpcorner.com/article/color-syntax-editor-part-ii-exporting-a-richtextbox-to-a-m/  
 https://duckduckgo.com/?q=nvim+cheatsheet&ia=cheatsheet&iax=cheatsheet&atb=v291-7gy
 https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+https://lab.github.com/
+https://opensource.guide/fr/
+https://opensource.guide/
+https://opensource.guide/how-to-contribute/#anatomy-of-an-open-source-project
+https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
+https://opensource.guide/building-community/
+https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+https://ncase.me/nutshell-beta/
+https://github.com/ncase/nutshell-beta
+https://blog.ncase.me/the-explorables-jam/
+https://ncase.me/joy/
+https://ncase.me/loopy/
+https://ncase.me/OVC2016/
+https://ncase.me/sim/
+https://explorabl.es
+https://explorabl.es/tutorials/
+https://explorabl.es/reading/
+https://explorabl.es/faq/
+https://explorabl.es/tools/
+https://ncase.me/projects/
+https://github.com/ncase
+https://ncase.me/faq/
+https://blog.ncase.me
+https://vimeo.com/327793736
+https://ncase.me/learning/
+https://ncase.me
 
 ***ENDE***
