@@ -1,31 +1,37 @@
 ﻿using System;
-// using System.Collections.Generic;
-// using System.ComponentModel;
-// using System.Data;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Diagnostics;
-// using System.Drawing;
+using System.Drawing;
 using System.IO;
-// using System.Linq;
-// using System.Text;
-// using System.Threading.Tasks;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-// using System.Xml;
+using System.Xml;
 
 namespace Ava
 {
     public partial class CoreForm : Form
     {
         // Declare global variables
-        string path = "";
-        string textualContent = "";
-        string targetText = "";
+        string path;
+        string textualContent;
+        string targetText;
         // private int aboutClickCounter;
-
+        SeekForm findRequestForm = new SeekForm();
+        ReplaceForm substitutionForm = new ReplaceForm();
 
         // Constuctor of CoreForm
         public CoreForm()
         {
             InitializeComponent();
+
+            // Define base values for the forms
+            path = "";
+            textualContent = "";
+            targetText = "";
 
             // Defines some basic properties at initialization
             contentRichTb.WordWrap = true;
@@ -58,7 +64,7 @@ namespace Ava
                 StreamReader softStreamRead = new StreamReader(openFile1.FileName);
                 contentRichTb.Text = softStreamRead.ReadToEnd();
 
-                // Closing the reader to optimkize computer resources and avoid some vulnerabilities
+                // Closing the reader to optimize computer resources and avoid some vulnerabilities
                 softStreamRead.Close();
             }
         }
@@ -66,18 +72,18 @@ namespace Ava
         private void saveToolStripButton_Click(object sender, EventArgs e)
         {
             // Give file location choice to the user
-            SaveFileDialog saveFile1 = new SaveFileDialog();
+            SaveFileDialog saveFile = new SaveFileDialog();
 
             // Define the extension nand filters for the types of files that it may save
-            saveFile1.DefaultExt = "*.txt";
-            saveFile1.Filter = "Plain text files(*.txt)|*.txt|All files(*.*)|*.*";
+            saveFile.DefaultExt = "*.txt";
+            saveFile.Filter = "Plain text files(*.txt)|*.txt|All files(*.*)|*.*";
 
             // Stocks the dialog choice and then the complete system path in the variable path
-            DialogResult choice = saveFile1.ShowDialog();
-            path = saveFile1.FileName;
+            DialogResult choice = saveFile.ShowDialog();
+            path = saveFile.FileName;
 
             // If the choice is affirmative (OK) and that the file contains more than zero characters, then it is saved
-            if (choice == DialogResult.OK && saveFile1.FileName.Length > 0) { contentRichTb.SaveFile(saveFile1.FileName, RichTextBoxStreamType.PlainText); /* The StreamType defines the saved file type */ }
+            if (choice == DialogResult.OK && saveFile.FileName.Length > 0) { contentRichTb.SaveFile(saveFile.FileName, RichTextBoxStreamType.PlainText); /* The StreamType defines the saved file type */ }
         }
 
         private void closeToolStripButton_Click(object sender, EventArgs e)
@@ -139,32 +145,84 @@ namespace Ava
 
         private void findToolStripButton_Click(object sender, EventArgs e)
         {
-            // Defines the target string to find out inside "contentRichTb"
-            targetText = "KEKE";
-
-            // If textualContent contains targetText, then display a MessageBox with the target text and its position index into the richTextBox accordingly
-            if (textualContent.Contains(targetText)) { MessageBox.Show("Found a match for "+"\""+targetText+"\""+" in this document."); }
-
-            if (!textualContent.Contains(targetText)) { MessageBox.Show("Found no match for "+"\""+targetText+"\""+" in this document."); }
-        }
-        private void replaceToolStripButton_Click(object sender, EventArgs e)
-        {
-            // Defines the target string to find out inside "contentRichTb", sets the replacing element and imports the text of "contentRichTb" into replacedTextCorpus
-            targetText = "KEKE";
-            string replaceTextElement = "KWEI";
-            string replacedTextCorpus = contentRichTb.Text;
-
-            // If the contentRichTb contains the target string, then replace it accordingly and then updates the overall contentRichTb.Text to his updated content
-            if (contentRichTb.Text.Contains(targetText))
+            if (!findRequestForm.Visible)
             {
-                replacedTextCorpus = contentRichTb.Text.Replace(targetText, replaceTextElement);
-                contentRichTb.Text = replacedTextCorpus;
+                // Show the substituteForm
+                findRequestForm.Show();
+            }
+
+            else if(findRequestForm.Visible)
+            {
+                // Hide the substituteForm
+                findRequestForm.Hide();
+            }
+
+            // Defines the target string to find out inside "contentRichTb"
+            targetText = SeekForm.seekedString;
+
+            if(SeekForm.hasValidValue)
+            {
+                // If textualContent contains targetText, then display a MessageBox with the target text and its position index into the richTextBox accordingly
+                if (textualContent.Contains(targetText)) { MessageBox.Show("Found a match for "+"\""+ targetText + "\""+" in this document."); }
+                if (!textualContent.Contains(targetText)) { MessageBox.Show("Found no match for "+"\""+ targetText + "\""+" in this document."); }
             }
         }
+
+        private void replaceToolStripButton_Click(object sender, EventArgs e)
+        {
+            if(!substitutionForm.Visible)
+            {
+                // Show the substituteForm
+                substitutionForm.Show();
+            }
+
+            else if(substitutionForm.Visible)
+            {
+                // Hide the substituteForm
+                substitutionForm.Hide();
+            }
+
+            if(ReplaceForm.canReplaceValue)
+            {
+                // Defines the target string to find out inside "contentRichTb", sets the replacing element and imports the text of "contentRichTb" into replacedTextCorpus
+                targetText = ReplaceForm.targetString;
+                string replaceTextElement = ReplaceForm.replacementString;
+                string replacedTextCorpus = contentRichTb.Text;
+                
+                // If the contentRichTb contains the target string, then replace it accordingly and then updates the overall contentRichTb.Text to his updated content
+                if (contentRichTb.Text.Contains(targetText))
+                {
+                    replacedTextCorpus = contentRichTb.Text.Replace(targetText, replaceTextElement);
+                    contentRichTb.Text = replacedTextCorpus;
+                }
+            }
+        }
+
         private void appendToolStripButton_Click(object sender, EventArgs e)
         {
-            // Appends the string value to the end of the document 
-            contentRichTb.Text += "\n(ASHUR;NINEVEH)";
+            // Give file location choice to the user
+            OpenFileDialog appendFileChoice = new OpenFileDialog();
+            string appendedFileText = "";
+
+            // Stocks the dialog choice and then the complete system path in the variable path
+            DialogResult choice = appendFileChoice.ShowDialog();
+            path = appendFileChoice.FileName;
+
+            // If the choice is affirmative (OK) and that the file contains more than zero characters, then it is saved
+            if (choice == DialogResult.OK && appendFileChoice.FileName.Length > 0)
+            {
+                // Opening the selected file and reads it to the very end
+                StreamReader softStreamRead = new StreamReader(appendFileChoice.FileName);
+
+                // Puts the text content of appendFileChoice into appendedFileText thanks to the softStreamRead
+                appendedFileText = softStreamRead.ReadToEnd();
+
+                // Appends the appendedFileText into contentRichTb
+                contentRichTb.Text += appendedFileText;
+
+                // Closing the reader to optimize computer resources and avoid some vulnerabilities
+                softStreamRead.Close();
+            }
         }
         
         // AWFUL CODE THAT DOESN'T DO ITS INTENDED PURPOSE WELL ENOUGH YET SO I DISABLED IT IN ITS ENTIRETY
