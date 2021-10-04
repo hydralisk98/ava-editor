@@ -33,5 +33,7 @@ namespace Ava
                 hasValidValue = true;
             }
         }
+
+        protected void SeekForm_OnFormClosing(object sender, FormClosingEventArgs e) { Hide(); }
     }
 }

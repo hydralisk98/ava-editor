@@ -97,8 +97,11 @@ namespace Ava
             this.Controls.Add(this.lbTargetTitle);
             this.Controls.Add(this.tbReplacement);
             this.Controls.Add(this.tbTarget);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ReplaceForm";
-            this.Text = "ReplaceForm";
+            this.Text = "Replace";
+            // this.FormClosing -= defaultClosing;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReplaceForm_OnFormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

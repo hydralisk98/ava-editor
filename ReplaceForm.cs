@@ -51,5 +51,7 @@ namespace Ava
                 canReplaceValue = true;
             }
         }
+
+        protected void ReplaceForm_OnFormClosing(object sender, FormClosingEventArgs e) { Hide(); } 
     }
 }

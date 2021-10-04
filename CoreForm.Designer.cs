@@ -208,7 +208,6 @@ namespace Ava
             this.findToolStripButton.Name = "findToolStripButton";
             this.findToolStripButton.Size = new System.Drawing.Size(34, 22);
             this.findToolStripButton.Text = "&Find";
-            this.findToolStripButton.Click += new System.EventHandler(this.findToolStripButton_Click);
             // 
             // replaceToolStripButton
             // 
@@ -218,7 +217,6 @@ namespace Ava
             this.replaceToolStripButton.Name = "replaceToolStripButton";
             this.replaceToolStripButton.Size = new System.Drawing.Size(52, 22);
             this.replaceToolStripButton.Text = "&Replace";
-            this.replaceToolStripButton.Click += new System.EventHandler(this.replaceToolStripButton_Click);
             // 
             // toolStripSeparator2
             // 

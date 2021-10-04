@@ -84,6 +84,7 @@ namespace Ava
 
             // If the choice is affirmative (OK) and that the file contains more than zero characters, then it is saved
             if (choice == DialogResult.OK && saveFile.FileName.Length > 0) { contentRichTb.SaveFile(saveFile.FileName, RichTextBoxStreamType.PlainText); /* The StreamType defines the saved file type */ }
+            else if (saveFile.FileName.Length <= 0) { saveFile.Dispose(); }
         }
 
         private void closeToolStripButton_Click(object sender, EventArgs e)
@@ -143,12 +144,18 @@ namespace Ava
             if(Clipboard.GetDataObject().GetDataPresent(DataFormats.Text)) { contentRichTb.Paste(); }
         }
 
+        /*
+        // AWFUL CODE THAT DOESN'T DO ITS INTENDED PURPOSE WELL ENOUGH YET SO I DISABLED IT PARTIALLY
+        
         private void findToolStripButton_Click(object sender, EventArgs e)
         {
+            
+
             if (!findRequestForm.Visible)
             {
                 // Show the substituteForm
                 findRequestForm.Show();
+                SeekForm neueFindRequestForm = new SeekForm();
             }
 
             else if(findRequestForm.Visible)
@@ -156,24 +163,25 @@ namespace Ava
                 // Hide the substituteForm
                 findRequestForm.Hide();
             }
-
+            
             // Defines the target string to find out inside "contentRichTb"
             targetText = SeekForm.seekedString;
 
-            if(SeekForm.hasValidValue)
+            if (SeekForm.hasValidValue)
             {
                 // If textualContent contains targetText, then display a MessageBox with the target text and its position index into the richTextBox accordingly
-                if (textualContent.Contains(targetText)) { MessageBox.Show("Found a match for "+"\""+ targetText + "\""+" in this document."); }
-                if (!textualContent.Contains(targetText)) { MessageBox.Show("Found no match for "+"\""+ targetText + "\""+" in this document."); }
+                if (textualContent.Contains(targetText)) { MessageBox.Show("Found a match for " + "\"" + targetText + "\"" + " in this document."); }
+                if (!textualContent.Contains(targetText)) { MessageBox.Show("Found no match for " + "\"" + targetText + "\"" + " in this document."); }
             }
         }
 
         private void replaceToolStripButton_Click(object sender, EventArgs e)
         {
-            if(!substitutionForm.Visible)
+            if (!substitutionForm.Visible)
             {
                 // Show the substituteForm
                 substitutionForm.Show();
+                ReplaceForm neueSubstitutionForm = new ReplaceForm();
             }
 
             else if(substitutionForm.Visible)
@@ -182,7 +190,7 @@ namespace Ava
                 substitutionForm.Hide();
             }
 
-            if(ReplaceForm.canReplaceValue)
+            if (ReplaceForm.canReplaceValue)
             {
                 // Defines the target string to find out inside "contentRichTb", sets the replacing element and imports the text of "contentRichTb" into replacedTextCorpus
                 targetText = ReplaceForm.targetString;
@@ -197,6 +205,8 @@ namespace Ava
                 }
             }
         }
+
+        */
 
         private void appendToolStripButton_Click(object sender, EventArgs e)
         {
@@ -225,8 +235,10 @@ namespace Ava
             }
         }
         
-        // AWFUL CODE THAT DOESN'T DO ITS INTENDED PURPOSE WELL ENOUGH YET SO I DISABLED IT IN ITS ENTIRETY
+        
         /*
+        // AWFUL CODE THAT DOESN'T DO ITS INTENDED PURPOSE WELL ENOUGH YET SO I DISABLED IT IN ITS ENTIRETY
+        
         private void aboutToolStripButton_Click(object sender, EventArgs e)
         {
             // Counting the number of clicks over this very button is gotta be useful later on

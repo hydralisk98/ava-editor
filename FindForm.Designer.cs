@@ -65,7 +65,7 @@ namespace Ava
             this.btnFind.UseVisualStyleBackColor = true;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
-            // FindForm
+            // SeekForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,8 +73,11 @@ namespace Ava
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.lbTargetTitle);
             this.Controls.Add(this.tbTarget);
-            this.Name = "FindForm";
-            this.Text = "FindForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "SeekForm";
+            this.Text = "Find";
+            // this.FormClosing -= defaultClosing;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SeekForm_OnFormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
