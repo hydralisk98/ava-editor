@@ -40,15 +40,12 @@ Ideation, deciding upon projects and all the meta-project talks
 
 * Update upon the documentation(added FLOSS file formats as alternative exports and preparing for PDFs releases) and creation of this ReadMe file
 * Proper disabling of everything related to the AboutForm inside the Form1 class
-* Find function (using Regex?)
-* Basic replace function
 * Dumb append function
 
 ### September 29th 2021
 
 * Set a default value to textualContent to avoid some error when trying to find something in a fresh blank document
 * Further tests over the Find, Replace, Append functions
-* Updated the response to the prompts if a match is found and added a full response to when a match isn't found
 * Checked out some NeoVim macros and commands for further reference and appended the link into the reference to the ReadMe references section
 
 ### September 30th 2021
@@ -110,12 +107,6 @@ So that by October 15h I have a great presentation to deliver to my comrades. (S
 * DB integration
 * APIs
 * Custom classes
-* 
-* 
-* 
-* 
-* 
-* 
 * 
 * 
 * 

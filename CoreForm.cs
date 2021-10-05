@@ -145,7 +145,7 @@ namespace Ava
         }
 
         /*
-        // AWFUL CODE THAT DOES ITS INTENDED PURPOSE NOT WELL ENOUGH YET SO I DISABLED IT PARTIALLY
+        // AWFUL CODE THAT DOES ITS INTENDED PURPOSE BUT NOT WELL ENOUGH YET SO I DISABLED IT PARTIALLY
         
         private void findToolStripButton_Click(object sender, EventArgs e)
         {
