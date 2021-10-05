@@ -1,8 +1,6 @@
 
 # Ava ReadMe
 
-Path: " D:\BOUO-SpecProgProjets\BOUOLY-CfprFinalFolio\Ava\ "  
-
 ## Features pitch
 
 DESCRIPTION
