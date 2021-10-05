@@ -1,10 +1,10 @@
 # Ava ReadMe
 
-Path: " D:\BOUO-SpecProgProjets\BOUOLY-CfprFinalFolio\Ava\ "  
+?
 
 ## Features pitch
 
-https://github.com/hydralisk98/Ava/
+https://github.com/hydralisk98/Ava/ ;
 https://hydralisk98.github.io/Ava/
 * Minimalist, so as few distractions and as little bloat as possible within Visual Studio .NET Core 5 C#'s constraints
 * Extensive quality documentation
@@ -65,22 +65,22 @@ So that by October 15h I have a great presentation to deliver to my comrades. (S
 
 ### Priority class 1
 
-* Finalize the Find function
-* Finalize the Replace function
-* Finalize the Append function
+* Font choices
 * BulletIndent
 * ZoomFactor?
 * SelectedRtf?
 * Overall (& segmented) richTextBox styling
 (fonts, BG & FG colors, bold, italics, embedded images...)
 * Implement the SGML/XML Read-only previewer
-* Improve the SGML/XML previewer to include writing into the previewer and dumb updating
 * Load and Save RTF files
 * Load and Save XML files
 * Load and Save PDF files
 
 ### Priority class 2
 
+* Finalize the Find function
+* Finalize the Replace function
+* Improve the SGML/XML previewer to include writing into the previewer and dumb updating
 * Enhance the SGML/XML previewer to do smart&dynamic previews between multiple instances
 * Reduce the code size and need for dependencies to a minimum (or zero if possible)
 * Load and Save ODT files
@@ -105,6 +105,21 @@ So that by October 15h I have a great presentation to deliver to my comrades. (S
 * MultimediaViewers
 * Perhaps some Vim macro commands as functions?
 
+### Priority class 4
+
+* DB integration
+* APIs
+* Custom classes
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
 ## References
 
 https://github.com/MindTouch/SGMLReader  
@@ -115,33 +130,32 @@ https://www.c-sharpcorner.com/article/syntax-highlighting-in-rich-textbox-contro
 https://www.c-sharpcorner.com/article/syntax-highlighting-in-richtextbox-control-part-2/  
 https://www.c-sharpcorner.com/article/part-i-simple-color-syntax-code-editor-for-php-written-in-c/  
 https://www.c-sharpcorner.com/article/color-syntax-editor-part-ii-exporting-a-richtextbox-to-a-m/  
-https://duckduckgo.com/?q=nvim+cheatsheet&ia=cheatsheet&iax=cheatsheet&atb=v291-7gy
-https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
 https://lab.github.com/  
 https://opensource.guide/fr/  
 https://opensource.guide/  
 https://opensource.guide/how-to-contribute/#anatomy-of-an-open-source-project  
-https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates  
 https://opensource.guide/building-community/  
+https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates  
 https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories  
-https://ncase.me/nutshell-beta/  
+https://github.com/ncase  
 https://github.com/ncase/nutshell-beta  
-https://blog.ncase.me/the-explorables-jam/  
+https://ncase.me  
+https://ncase.me/learning/  
+https://ncase.me/nutshell-beta/  
 https://ncase.me/joy/  
 https://ncase.me/loopy/  
 https://ncase.me/OVC2016/  
 https://ncase.me/sim/  
+https://ncase.me/projects/  
+https://ncase.me/faq/  
 https://explorabl.es  
 https://explorabl.es/tutorials/  
 https://explorabl.es/reading/  
 https://explorabl.es/faq/  
 https://explorabl.es/tools/  
-https://ncase.me/projects/  
-https://github.com/ncase  
-https://ncase.me/faq/  
 https://blog.ncase.me  
+https://blog.ncase.me/the-explorables-jam/  
 https://vimeo.com/327793736  
-https://ncase.me/learning/  
-https://ncase.me  
+https://duckduckgo.com/?q=nvim+cheatsheet&ia=cheatsheet&iax=cheatsheet&atb=v291-7gy
 
 ***ENDE***

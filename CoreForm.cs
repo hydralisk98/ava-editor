@@ -145,7 +145,7 @@ namespace Ava
         }
 
         /*
-        // AWFUL CODE THAT DOESN'T DO ITS INTENDED PURPOSE WELL ENOUGH YET SO I DISABLED IT PARTIALLY
+        // AWFUL CODE THAT DOES ITS INTENDED PURPOSE NOT WELL ENOUGH YET SO I DISABLED IT PARTIALLY
         
         private void findToolStripButton_Click(object sender, EventArgs e)
         {
@@ -158,7 +158,7 @@ namespace Ava
                 SeekForm neueFindRequestForm = new SeekForm();
             }
 
-            else if(findRequestForm.Visible)
+            else if (findRequestForm.Visible)
             {
                 // Hide the substituteForm
                 findRequestForm.Hide();
@@ -184,7 +184,7 @@ namespace Ava
                 ReplaceForm neueSubstitutionForm = new ReplaceForm();
             }
 
-            else if(substitutionForm.Visible)
+            else if (substitutionForm.Visible)
             {
                 // Hide the substituteForm
                 substitutionForm.Hide();
