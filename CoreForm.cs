@@ -17,9 +17,10 @@ namespace Ava
     {
         // Declare global variables
         string path;
-        string textualContent;
+        public static string textualContent;
         string targetText;
         // private int aboutClickCounter;
+        PreviewForm previewingForm = new PreviewForm();
         SeekForm findRequestForm = new SeekForm();
         ReplaceForm substitutionForm = new ReplaceForm();
 
@@ -111,6 +112,8 @@ namespace Ava
 
         private void previewToolStripButton_Click(object sender, EventArgs e)
         {
+            previewingForm.Show();
+
             /* Gonna see about that soon enough after some more reading of both the XML documentation and the hyperlink's ReadMe: https://github.com/MindTouch/SGMLReader */
         }
 
