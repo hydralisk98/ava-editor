@@ -11,8 +11,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
+// There should be some DB and API integrations in the project but I am so slow that I prefer to go polish what I have left here to optimize the slideshow presentation to the optimum it deserves
 namespace Ava
 {
+    // Define UtaSymbol as a new C# Primitive Class
     class UtaSymbol
     {
         private UtaSymbol(ushort val)
@@ -32,6 +34,7 @@ namespace Ava
         }
     }
 
+    // Define AvaSymbol as a new C# Primitive Class
     class AvaSymbol
     {
         private AvaSymbol(ushort val)
@@ -93,7 +96,9 @@ namespace Ava
             return me._value;
         }
     }
+    // A decent part of information to implement the two custom primitive classes were taken from there: [ https://stackoverflow.com/questions/7615113/define-custom-integer-based-type ]
 
+    // Actual main class to use for the use of Uta and Ava systems, still massively unfinishe work.in.progress and barebones
     public class AvaSystem
     {
         // Global vars
