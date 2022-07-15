@@ -1,6 +1,7 @@
 # Ava ReadMe
 
-?
+Penultimate ProgrammingCourse's Project at the "CFP des Riverains"
+Definitely gotta be revamped from scratch entirely fairly soon for the Servitor computing ecosystem project.
 
 ## Features pitch
 
